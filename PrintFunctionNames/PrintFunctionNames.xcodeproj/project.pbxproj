@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F79AA84D18535D2C00C51467 /* Tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F79AA84E18535D2C00C51467 /* Build configuration list for PBXAggregateTarget "Tests" */;
+			buildPhases = (
+				F79AA85118535D6A00C51467 /* ShellScript */,
+			);
+			dependencies = (
+				F79AA854185362B300C51467 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F79AA843185352B700C51467 /* PrintFunctionNames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F79AA842185352B700C51467 /* PrintFunctionNames.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F79AA853185362B300C51467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F79AA8321853525F00C51467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F79AA8391853525F00C51467;
+			remoteInfo = PrintFunctionNames;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F79AA83A1853525F00C51467 /* libPrintFunctionNames.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPrintFunctionNames.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79AA841185352B700C51467 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = PrintFunctionNames/Config.xcconfig; sourceTree = "<group>"; };
+		F79AA842185352B700C51467 /* PrintFunctionNames.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PrintFunctionNames.cpp; path = PrintFunctionNames/PrintFunctionNames.cpp; sourceTree = "<group>"; };
+		F79AA846185352F100C51467 /* clang+llvm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "clang+llvm"; sourceTree = "<group>"; };
+		F79AA84B18535C4700C51467 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = test.c; path = Tests/test.c; sourceTree = "<group>"; };
+		F79AA8551853672A00C51467 /* RunTests.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = RunTests.py; path = Tests/RunTests.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F79AA8371853525F00C51467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F79AA8311853525F00C51467 = {
+			isa = PBXGroup;
+			children = (
+				F79AA844185352BE00C51467 /* PrintFunctionNames */,
+				F79AA84C18535C4E00C51467 /* Tests */,
+				F79AA845185352CD00C51467 /* Dependencies */,
+				F79AA83B1853525F00C51467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F79AA83B1853525F00C51467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F79AA83A1853525F00C51467 /* libPrintFunctionNames.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F79AA844185352BE00C51467 /* PrintFunctionNames */ = {
+			isa = PBXGroup;
+			children = (
+				F79AA841185352B700C51467 /* Config.xcconfig */,
+				F79AA842185352B700C51467 /* PrintFunctionNames.cpp */,
+			);
+			name = PrintFunctionNames;
+			sourceTree = "<group>";
+		};
+		F79AA845185352CD00C51467 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F79AA846185352F100C51467 /* clang+llvm */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		F79AA84C18535C4E00C51467 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F79AA84B18535C4700C51467 /* test.c */,
+				F79AA8551853672A00C51467 /* RunTests.py */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F79AA8381853525F00C51467 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F79AA8391853525F00C51467 /* PrintFunctionNames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79AA83E1853525F00C51467 /* Build configuration list for PBXNativeTarget "PrintFunctionNames" */;
+			buildPhases = (
+				F79AA8B41853881100C51467 /* ShellScript */,
+				F79AA8361853525F00C51467 /* Sources */,
+				F79AA8371853525F00C51467 /* Frameworks */,
+				F79AA8381853525F00C51467 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrintFunctionNames;
+			productName = PrintFunctionNames;
+			productReference = F79AA83A1853525F00C51467 /* libPrintFunctionNames.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F79AA8321853525F00C51467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Volodymyr Sapsai";
+			};
+			buildConfigurationList = F79AA8351853525F00C51467 /* Build configuration list for PBXProject "PrintFunctionNames" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F79AA8311853525F00C51467;
+			productRefGroup = F79AA83B1853525F00C51467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F79AA8391853525F00C51467 /* PrintFunctionNames */,
+				F79AA84D18535D2C00C51467 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F79AA85118535D6A00C51467 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "/usr/bin/env python \"${SRCROOT}/Tests/RunTests.py\"";
+		};
+		F79AA8B41853881100C51467 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [ ! -d \"${SRCROOT}/clang+llvm\" ]; then\n    echo \"Please download Clang+LLVM binaries from http://llvm.org/releases/download.html\"\n    echo \"and unarchive them to ${SRCROOT}/clang+llvm\"\n    echo \"The result should look like\"\n    cat <<EOF\n  PrintFunctionNames.xcodeproj\n  PrintFunctionNames\n  clang+llvm\n  |--bin\n  |--include\n  |--lib\nEOF\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F79AA8361853525F00C51467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79AA843185352B700C51467 /* PrintFunctionNames.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F79AA854185362B300C51467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F79AA8391853525F00C51467 /* PrintFunctionNames */;
+			targetProxy = F79AA853185362B300C51467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F79AA83C1853525F00C51467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79AA841185352B700C51467 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F79AA83D1853525F00C51467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79AA841185352B700C51467 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F79AA83F1853525F00C51467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F79AA8401853525F00C51467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F79AA84F18535D2C00C51467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F79AA85018535D2C00C51467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F79AA8351853525F00C51467 /* Build configuration list for PBXProject "PrintFunctionNames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79AA83C1853525F00C51467 /* Debug */,
+				F79AA83D1853525F00C51467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F79AA83E1853525F00C51467 /* Build configuration list for PBXNativeTarget "PrintFunctionNames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79AA83F1853525F00C51467 /* Debug */,
+				F79AA8401853525F00C51467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F79AA84E18535D2C00C51467 /* Build configuration list for PBXAggregateTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79AA84F18535D2C00C51467 /* Debug */,
+				F79AA85018535D2C00C51467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F79AA8321853525F00C51467 /* Project object */;
+}

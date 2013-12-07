@@ -1,0 +1,53 @@
+//
+//  Config.xcconfig
+//  PrintFunctionNames
+//
+//  Created by Volodymyr Sapsai on 12/6/13.
+//  Copyright (c) 2013 Volodymyr Sapsai. All rights reserved.
+//
+
+//	Linking
+//	{
+	linker_options = -Wl,-headerpad_max_install_names -Wl,-flat_namespace -Wl,-undefined -Wl,suppress
+	llvm_libraries = -lLLVMSupport -lLLVMMC -lLLVMMCParser -lLLVMCore -lLLVMBitReader -lLLVMOption -lLLVMTransformUtils
+	clang_libraries = -lclangFrontend -lclangAnalysis -lclangAST -lclangBasic -lclangDriver -lclangEdit -lclangLex -lclangParse -lclangSema -lclangSerialization
+	other_libraries = -lcurses -lpthread -lz
+	OTHER_LDFLAGS = ${linker_options} ${llvm_libraries} ${clang_libraries} ${other_libraries}
+//	}
+
+//	Search Paths
+//	{
+	HEADER_SEARCH_PATHS = $(inherited) "${SRCROOT}/clang+llvm/include"
+	LIBRARY_SEARCH_PATHS = $(inherited) "${SRCROOT}/clang+llvm/lib"
+//	}
+
+//	Compiler - Code Generation
+//	{
+	GCC_STRICT_ALIASING = YES
+	GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+	GCC_NO_COMMON_BLOCKS = YES
+//	}
+
+//	Compiler - Custom Compiler Flags
+//	{
+	OTHER_CPLUSPLUSFLAGS = -fPIC
+//	}
+
+//	Compiler - Language - C++
+//	{
+	// IMPORTANT: make sure CLANG_CXX_LANGUAGE_STANDARD, CLANG_CXX_LIBRARY
+	// settings aren't overridden by target (by default they are overridden).
+	//
+	// Clang+LLVM is still built with C++98.  Keep an eye on these settings
+	// because starting with Clang 3.5 it is going to be built with C++11.
+	CLANG_CXX_LANGUAGE_STANDARD = gnu++98
+	CLANG_CXX_LIBRARY = libstdc++
+
+	// Clang+LLVM libraries require no-RTTI.
+	GCC_ENABLE_CPP_RTTI = NO
+//	}
+
+//	Compiler - Preprocessing
+//	{
+	GCC_PREPROCESSOR_DEFINITIONS = __STDC_LIMIT_MACROS __STDC_CONSTANT_MACROS
+//	}
